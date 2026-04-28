@@ -1,16 +1,112 @@
-# React + Vite
+# 🛍️ ShopZone - E-Commerce Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Overview
 
-Currently, two official plugins are available:
+ShopZone is a modern **E-commerce Single Page Application (SPA)** built using React.
+Users can browse products, view details, add items to cart, and complete checkout with authentication.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🔥 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🏠 Home Page with clean UI
+* 🛍️ Shop Page (API-based products)
+* 🔍 Live Search Filtering
+* 📄 Product Details Page (Dynamic Routing)
+* 🖼️ Image Preview (click thumbnails)
+* 🛒 Add to Cart (Context API)
+* 🔢 Cart Quantity & Total Calculation
+* 💾 Persistent Cart (localStorage)
+* 🔐 Protected Checkout Route
+* 👤 Guest Login System
+* 🎉 Order Confirmation Page
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Tech Stack
+
+* React (Vite)
+* React Router DOM
+* Context API
+* Tailwind CSS
+* DummyJSON API
+
+---
+
+## 🌐 API Used
+
+https://dummyjson.com/products
+
+---
+
+## 📁 Project Structure
+
+src/
+│── components/
+│   └── ProductCard.jsx
+│── pages/
+│   ├── Home.jsx
+│   ├── Shop.jsx
+│   ├── Product.jsx
+│   ├── Cart.jsx
+│   ├── Checkout.jsx
+│   └── Login.jsx
+│── context/
+│   └── CartContext.jsx
+│── App.jsx
+│── main.jsx
+
+---
+
+## ⚙️ Installation
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 🔐 Protected Route Logic
+
+* User must login to access `/checkout`
+* If not logged in → redirect to `/login`
+
+---
+
+## 💾 LocalStorage
+
+* Cart data persists after refresh
+* User login state also stored
+
+---
+
+## 🎯 Learning Outcomes
+
+* React Router (SPA Navigation)
+* Global State Management (Context API)
+* API Integration
+* Protected Routes
+* Modern UI Design
+
+---
+
+## 🚀 Deployment
+
+Deployed using Vercel
+
+---
+
+## 🎥 Demo
+
+Link Here:-
+[(https://shop-zone-sepia.vercel.app/)]
+---
+
+## 👨‍💻 Author
+
+Shubham chaurasiya
+
+---
+
+## ⭐ If you like this project, give it a star!
